@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class HTTPServer;
+
+UIBackgroundTaskIdentifier backgroundTask;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic, readonly) HTTPServer *httpServer;
 
 @end
